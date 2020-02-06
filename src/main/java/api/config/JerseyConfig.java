@@ -13,5 +13,8 @@ public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
         this.register(RequestContextFilter.class);
         this.packages("api.endpoint");
+        this.register(IdadeContatoExceptionHandler.class);
+        this.register(ContatoNaoEncontradoExceptionHandler.class);
+        this.register(CorsInterceptor.class);
     }
 }

@@ -12,4 +12,3 @@ public class WebApiApplication {
         SpringApplication.run(WebApiApplication.class, args);
     }
 }
-// iniciar 'Implementação das Funcionalidades' - p. 18
