@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gerenciador de Contatos</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Lista de contatos</h1><hr>
+		<form>
+			<div class="form-group">
+				<input id='apiPath' style='width: 400px;' value='http://localhost:8080/agenda-api' class="form-control">
+				<div style="margin-top:15px"></div>	
+				<button id='botaoListarTodos' type="button" class="btn btn-default" style="width:140px;border:1px solid #ccc">Listar</button>
+				<span style="margin-left:25px"></span>
+				<button id='botaoCadastrar' type="button" class="btn btn-primary" style="width:140px">Cadastrar</button>
+			</div>
+		</form>
+		
+		<div id="listaDeContatos">
+			<table id="tabelaContatos" class="table table-striped">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Email</th>
+						<th>CPF</th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
